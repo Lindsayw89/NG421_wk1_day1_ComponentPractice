@@ -56,12 +56,16 @@ Let's use our data to dynamically make some html and components show up in our p
   * `<tr *ngFor="let order of orders"></tr>`
   * Populate the hard coded information with dynamic data from the `order` variable
   * We should now see multiple rows in the transaction panel.
+
+
 * TaskPanel (task-panel.component.ts)
   * Import the tasks array into this component from `./src/app/tasks.ts`
-  * In the `OnNgInit`method, assign this array to a class property called `tasks` 
+  * In the `OnNgInit`method, assign this array to a class property called `tasks`
+   
   * In `task-panel.component.html` use `ngFor` on the `<app-task-item>` element
   * `<app-task-item *ngFor="let task of tasks"></app-task-item>`
   * We shoudl now see multiple rows in the task panel.
+
 * TopNav (top-nav.component.ts)
   * Import the messages array into this component from `./src/app/messages.ts`
   * In the `OnNgInit`method, assign this array to a class property called `messages` 
